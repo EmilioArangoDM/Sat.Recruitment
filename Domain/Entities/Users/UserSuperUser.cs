@@ -1,7 +1,7 @@
 ﻿using System.Security.Policy;
 using System;
 
-namespace Sat.Recruitment.Api.Entities
+namespace Sat.Recruitment.Domain.Entities.Users
 {
     public class UserSuperUser : User
     {
@@ -11,8 +11,8 @@ namespace Sat.Recruitment.Api.Entities
             if (Money > 100)
             {
                 var percentage = Convert.ToDecimal(0.20);
-                var gif = Money * percentage;
-                Money = Money + gif;
+                var gift = Money * percentage;
+                Money += gift;
             }
         }
     }

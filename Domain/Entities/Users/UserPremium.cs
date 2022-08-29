@@ -1,6 +1,4 @@
-﻿using System.Security.Policy;
-
-namespace Sat.Recruitment.Api.Entities
+﻿namespace Sat.Recruitment.Domain.Entities.Users
 {
     public class UserPremium : User
     {
@@ -9,8 +7,8 @@ namespace Sat.Recruitment.Api.Entities
             //Add huge gift to users with more than USD100.
             if (Money > 100)
             {
-                var gif = Money * 2;
-                Money = Money + gif;
+                var gift = Money * 2;
+                Money += gift;
             }
         }
     }
